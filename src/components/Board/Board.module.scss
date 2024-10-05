@@ -1,0 +1,47 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.board__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.board__cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 2px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.board__cell--correct {
+  background-color: #6aaa64;
+  border-color: #6aaa64;
+  color: #ffffff;
+}
+
+.board__cell--present {
+  background-color: #c9b458;
+  border-color: #c9b458;
+  color: #ffffff;
+}
+
+.board__cell--absent {
+  background-color: #787c7e;
+  border-color: #787c7e;
+  color: #ffffff;
+}
